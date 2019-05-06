@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>lekhok-dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- Chart css -->
+    <link href="assets/css/vendor/britecharts.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- third party css -->
+        <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+    
+    <!-- Custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div id="outer_wrap">
+        <div class="container-fluid">
+            <div class="row">
+               <div class="nav_toggle">
+                   <button id="btn_toggle"><i class="fas fa-bars"></i></button>
+               </div>
+                <div class="col-sm-2 outer">
+                    <div id="sidebar">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" class="img-responsive" alt="Responsive image"></a>
+                        </div>
+                        <div class="menu">
+                            <div class="top">
+                                <ul>
+                                    <li><a href="#">প্রথম পাতা</a></li>
+                                    <li><a href="">কার্যক্রম</a></li>
+                                    <li><a href="">এই মুহূর্তে</a></li>
+                                    <li><a href="">লেখক মঞ্চ</a></li>
+                                    <hr>
+                                    <li><a href="">আভাসপট</a></li>
+                                    <li><a href="">প্রতিবেদন</a></li>
+                                    <li><a href="">বিবরণ</a></li>
+                                    <li><a href="">লেনদেন</a></li>
+                                    <li><a href="">পরিচিতি</a></li>
+                                    <hr>
+                                    <li><a href="">বিজ্ঞপ্তি</a></li>
+                                    <li><a href="">সরঞ্জাম</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><a href="">নীতিমালা</a></li>
+                                    <li><a href="">সহায়তা</a></li>
+                                    <li><a href="">পরিচয়</a></li>
+                                    <hr>
+                                    <small>
+                                        সংস্করণ: ২.০১
+                                        <br><br>
+                                        স্বত্ত্ব ২০১৪ - ২০১৭
+                                        কালার টকিঙ 
+                                        লিমিটেড
+                                    </small>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 outer">
+                    <div class="main_content">
+                        <header>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>লেখক</p>
+                                    <h4>নতুন প্রতিবেদন</h4>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#"><img src="images/print.png" alt=""></a>
+                                </div>
+                            </div>
+                        </header>
+                        
+
+                        
+                        <section id="main">
+                            <div class="content_wrap">
+                                <div class="row">
+                                   
+                                    <div class="col-sm-8">
+                                        <div class="left_top">
+                                            <h4>আপনার প্রকাশিত লেখা ১০টি। প্রকাশের অপেক্ষায় আছে ১২টি লেখা। আর খসড়া হিসেবে আছে ১০টি লেখা।</h4>
+                                            <button type="button" class="btn btn-primary">নতুন প্রতিবেদন লিখুন</button>
+                                            <button type="button" class="btn btn-info">নতুন প্রতিবেদন লিখুন</button>
+                                            <hr>
+                                        </div>
+                                        <div class="left_bottom">
+                                            <h5>অপ্রকাশিত সব প্রতিবেদন</h5>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <img src="images/shape1.png" alt="">
+                                                </div>
+                                                <div class="col-xs-10">
+                                                    <h3>গরমে আপনার ব্যাগে যে জিনিসগুলো  অবশ্যই রাখবেন</h3>
+                                                    <p>সর্বশেষ সম্পাদনা হয়েছে: ১২ জানুয়ারী ২০১৭, ১২:৪৫</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <img src="images/shape2.png" alt="">
+                                                </div>
+                                                <div class="col-xs-10">
+                                                    <h3>গরমে আপনার ব্যাগে যে জিনিসগুলো  অবশ্যই রাখবেন</h3>
+                                                    <p>সর্বশেষ সম্পাদনা হয়েছে: ১২ জানুয়ারী ২০১৭, ১২:৪৫</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <img src="images/shape1.png" alt="">
+                                                </div>
+                                                <div class="col-xs-10">
+                                                    <h3>গরমে আপনার ব্যাগে যে জিনিসগুলো  অবশ্যই রাখবেন</h3>
+                                                    <p>সর্বশেষ সম্পাদনা হয়েছে: ১২ জানুয়ারী ২০১৭, ১২:৪৫</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div> <!-- end col-->
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="right_top">
+                                            <h3>০,০১৩</h3>
+                                            <h4 class="">এই মাসে মোট <br>প্রকাশিত লেখা</h4>
+                                        </div>
+                                        <div class="right_middle">
+                                            <p>আপনার প্রকাশিত শেষ লেখা:</p>
+                                            <h4>কেমনে বলিব আমি বাঁচিনা তারে ছাড়া,আমি ফুল...</h4>
+                                            <small>১২ আগস্ট ২০১৭, ১২:৪৫</small>
+                                        </div>
+                                        <hr style="border-top: 1px solid #d3d3d3">
+                                        <div class="right_bottom">
+                                            <img src="images/ad.png" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end row-->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+        <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- third party:js -->
+    <script src="assets/js/vendor/d3.min.js"></script>
+    <script src="assets/js/vendor/britecharts.min.js"></script>
+    <!-- third party end -->
+
+    <!-- demo:js -->
+    <script src="assets/js/pages/demo.britechart.js"></script>
+    <!-- demo end -->
+    
+    <script>
+        // Bar chart
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+    
+    </script>
+    
+    <script>
+$(document).ready(function(){
+    $("#btn_toggle").click(function(){
+        $(".col-sm-2").toggleClass("active_tgle");
+    });
+});
+</script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-us-merc-en.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-in-mill-en.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-au-mill-en.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.vector-maps.js"></script>
+        <!-- end demo js-->
+
+
+</body>
+
+</html>

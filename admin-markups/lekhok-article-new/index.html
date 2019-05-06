@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- Custom -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="http://www.expertphp.in/js/jquery.form.js"></script>
+    <script>
+    function preview_images() 
+    {
+     var total_file=document.getElementById("images").files.length;
+     for(var i=0;i<total_file;i++)
+     {
+      $('#image_preview').append("<div class='col-md-3'><img class='img-responsive' src='"+URL.createObjectURL(event.target.files[i])+"'></div>");
+     }
+    }
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div id="outer_wrap">
+        <div class="container-fluid">
+            <div class="row">
+               <div class="nav_toggle">
+                   <button id="btn_toggle"><i class="fas fa-bars"></i></button>
+               </div>
+                <div class="col-sm-2">
+                    <div id="sidebar">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" class="img-responsive" alt="Responsive image"></a>
+                        </div>
+                        <div class="menu">
+                            <div class="top">
+                                <ul>
+                                    <li><a href="#">প্রথম পাতা</a></li>
+                                    <li><a href="">কার্যক্রম</a></li>
+                                    <li><a href="">এই মুহূর্তে</a></li>
+                                    <li><a href="">লেখক মঞ্চ</a></li>
+                                    <hr>
+                                    <li><a href="">আভাসপট</a></li>
+                                    <li><a href="">প্রতিবেদন</a></li>
+                                    <li><a href="">বিবরণ</a></li>
+                                    <li><a href="">লেনদেন</a></li>
+                                    <li><a href="">পরিচিতি</a></li>
+                                    <hr>
+                                    <li><a href="">বিজ্ঞপ্তি</a></li>
+                                    <li><a href="">সরঞ্জাম</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><a href="">নীতিমালা</a></li>
+                                    <li><a href="">সহায়তা</a></li>
+                                    <li><a href="">পরিচয়</a></li>
+                                    <hr>
+                                    <small>
+                                        সংস্করণ: ২.০১
+                                        <br><br>
+                                        স্বত্ত্ব ২০১৪ - ২০১৭
+                                        কালার টকিঙ 
+                                        লিমিটেড
+                                    </small>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="main_content">
+                        <header>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>লেখক</p>
+                                    <h4>নতুন প্রতিবেদন</h4>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#"><img src="images/print.png" alt=""></a>
+                                </div>
+                            </div>
+                        </header>
+                        <section id="call_to_action">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default" type="submit">সংরক্ষণ</button>
+                                    <p>১ মিনিট আগে স্বয়ংক্রিয় সংরক্ষণ হয়েছে</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-primary" type="submit">প্রকাশের জন্য দাখিল করুন</button>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        
+                        <section id="input_form">
+                            <div class="">
+    <div class="">
+      <div class="panel with-nav-tabs panel-primary">
+
+        <div class="panel-body">
+          <div class="tab-content">
+
+            <div class="tab-pane fade in active" id="Tabs-Keempat">
+              <!-- disini maksudnya in active yaitu mengaktifkan file yg ditampilkan untuk pertamakali -->
+              <div class="">
+                <form method="POST" action="#">
+                  <div class="form-group files color">
+                    <input type="file" class="form-control file_hide" multiple="">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ছবির সংক্রান্ত সংক্ষিপ্ত তথ্য যোগ করুন">
+                    <input type="text" class="form-control" style="font-size: 36px;padding-top: 55px;padding-bottom: 26px;" id="exampleInputEmail1" placeholder="শিরোনাম লিখুন">
+                    <textarea class="form-control" style="font-size: 24px;padding-top: 16px;padding-bottom: 16px;" rows="2" placeholder="প্রতিবেদনের চুম্বক অংশ"></textarea>
+                    <textarea class="form-control" style="font-size: 16px;padding-top: 16px;padding-bottom: 16px;" rows="8" placeholder="বিস্তারিত বিবরণ"></textarea>
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+                        </section>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+         $('#add_more').click(function() {
+          "use strict";
+          $(this).before($("<div/>", {
+            id: 'filediv'
+          }).fadeIn('slow').append(
+            $("<input/>", {
+              name: 'file[]',
+              type: 'file',
+              id: 'file',
+              multiple: 'multiple',
+              accept: 'image/*'
+            })
+          ));
+        });
+
+        $('#upload').click(function(e) {
+          "use strict";
+          e.preventDefault();
+
+          if (window.filesToUpload.length === 0 || typeof window.filesToUpload === "undefined") {
+            alert("No files are selected.");
+            return false;
+          }
+
+          // Now, upload the files below...
+          // https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications#Handling_the_upload_process_for_a_file.2C_asynchronously
+        });
+
+        deletePreview = function (ele, i) {
+          "use strict";
+          try {
+            $(ele).parent().remove();
+            window.filesToUpload.splice(i, 1);
+          } catch (e) {
+            console.log(e.message);
+          }
+        }
+
+        $("#file").on('change', function() {
+          "use strict";
+
+          // create an empty array for the files to reside.
+          window.filesToUpload = [];
+
+          if (this.files.length >= 1) {
+            $("[id^=previewImg]").remove();
+            $.each(this.files, function(i, img) {
+              var reader = new FileReader(),
+                newElement = $("<div id='previewImg" + i + "' class='previewBox'><img /></div>"),
+                deleteBtn = $("<span class='delete' onClick='deletePreview(this, " + i + ")'>X</span>").prependTo(newElement),
+                preview = newElement.find("img");
+
+              reader.onloadend = function() {
+                preview.attr("src", reader.result);
+                preview.attr("alt", img.name);
+              };
+
+              try {
+                window.filesToUpload.push(document.getElementById("file").files[i]);
+              } catch (e) {
+                console.log(e.message);
+              }
+
+              if (img) {
+                reader.readAsDataURL(img);
+              } else {
+                preview.src = "";
+              }
+
+              newElement.appendTo("#filediv");
+            });
+          }
+        });
+    </script>
+    <script>
+$(document).ready(function(){
+    $("#btn_toggle").click(function(){
+        $(".col-sm-2").toggleClass("active_tgle");
+    });
+});
+</script>
+</body>
+
+</html>
